@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.saptex.controller.UserController">
+   <children>
+      <TableView fx:id="userTableView" layoutX="20.0" layoutY="47.0" prefHeight="495.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="45.0" text="id" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="102.0" text="First_name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="112.0" text="last_name" />
+            <TableColumn fx:id="ageColumn" prefWidth="56.0" text="Age" />
+        </columns>
+      </TableView>
+      <Separator layoutX="377.0" layoutY="6.0" orientation="VERTICAL" prefHeight="589.0" prefWidth="6.0" />
+      <Label layoutX="416.0" layoutY="105.0" text="First_Name" />
+      <Label layoutX="416.0" layoutY="198.0" text="Last_Name" />
+      <Label layoutX="416.0" layoutY="301.0" text="Age" />
+      <TextField fx:id="textFieldFirstName" layoutX="512.0" layoutY="101.0" />
+      <TextField fx:id="textFieldLastName" layoutX="512.0" layoutY="194.0" />
+      <TextField fx:id="textFieldAge" layoutX="512.0" layoutY="297.0" />
+      <Label layoutX="413.0" layoutY="39.0" text="Id" />
+      <Button layoutX="401.0" layoutY="423.0" mnemonicParsing="false" onAction="#deleteButton" text="Удалить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="541.0" layoutY="423.0" mnemonicParsing="false" onAction="#buttonSave" text="Добавить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="661.0" layoutY="423.0" mnemonicParsing="false" onAction="#buttonUpdate" text="Обновить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelId" layoutX="512.0" layoutY="39.0" text="Label" />
+   </children>
+</AnchorPane>

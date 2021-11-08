@@ -28,7 +28,8 @@ public class UserDaoImpl implements Dao<User, Integer> {
     @Override
     public List<User> findAll() {
         try(Session session = factory.openSession()) {
-            return session.createQuery("User From", User.class).list();
+            //HQL
+            return session.createQuery("from User ", User.class).list();
         }
 
     }
